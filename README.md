@@ -1,73 +1,72 @@
 # ESG-Financial-Risk-Detection-for-Strategic-Decision-Making
 
-Objective
+The Story
 
-This project explores how Environmental, Social, and Governance (ESG) metrics interact with financial performance.
-The goal is to detect early-warning risk signals that can impact investment decisions, client trust, and long-term business sustainability.
+In 2025, investors and companies are no longer judged solely by financial metrics. Environmental, Social, and Governance (ESG) performance now directly impacts long-term profitability and reputation.
 
-Data Overview
+But the challenge is real: how do you quantify ESG risk alongside financial data to make smarter strategic decisions?
 
-Dataset Size: 11,000+ rows, 16 columns (2020–2025)
+This project answers that question by turning ESG and financial datasets into actionable insights for companies and investors.
 
-Sources: Combined Kaggle ESG dataset + financial KPI datasets
+Understanding the Problem
 
-Key Features: ESG scores, carbon emissions, board diversity, revenue growth, operating margin, and debt ratio.
+Companies publish ESG scores, but these numbers rarely tell the full story.
 
-Approach
-1. Data Preprocessing
+Financial performance and ESG often move independently, making risk assessment tricky.
 
-Cleaned missing ESG scores using regression imputation
+Decision-makers needed a way to visualize risk and detect patterns early.
 
-Normalized financial metrics across industries
+The Approach
 
-Merged ESG and financial data using company identifiers
+Data Collection
 
-2. Feature Engineering
+Combined ESG datasets with financial KPIs (2015–2025) for 11,000+ projects/companies.
 
-Created Risk Index = (Debt Ratio × Carbon Intensity) / Governance Score
+Feature Engineering
 
-Built ESG trend features (3-year moving averages)
+Created Risk Index = (Debt Ratio × Carbon Intensity) ÷ Governance Score
 
-3. Modeling
+Calculated 3-year moving averages to detect trends
 
-Clustering (K-Means): Segmented companies into High-Risk, Moderate-Risk, and Sustainable Leaders.
+Analysis & Modeling
 
-Logistic Regression: Predicted probability of financial distress based on ESG scores.
+Clustering (K-Means) to segment companies: High-Risk, Moderate-Risk, Sustainable Leaders
 
-Random Forest Classifier: Ranked top ESG factors impacting net profit.
+Random Forest Classifier to identify which ESG factors most influence net profit
 
-4. Visualization
+Correlation Analysis between ESG scores and financial KPIs
+
+Visualization
 
 Power BI dashboard with:
 
-KPI Cards: Net Profit, ESG Score, Risk Index
+Heatmaps of risk by industry and region
 
-Heatmap: Risk concentration by industry and region
+Trend lines showing ESG vs financial performance
 
-Trend Lines: ESG performance vs profitability
+KPI cards for quick decision-making
 
-Results
+Key Insights
 
-Companies with low governance scores had 2.5× higher risk of financial instability.
+Low governance scores = 2.5x higher financial risk
 
-High carbon emitters showed a negative 0.65 correlation with long-term profitability.
+High carbon-emitting companies tend to show negative correlation with profitability
 
-Diversity in leadership correlated with 7–9% higher revenue growth over 5 years.
+Leadership diversity correlates with 7–9% higher revenue growth
 
-Tools & Tech
+Why This Matters
+
+Helps investors de-risk portfolios by integrating ESG with financial metrics
+
+Provides companies with early-warning signals for strategic decision-making
+
+Turns raw ESG data into a business intelligence tool that influences real decisions
+
+Tech Stack
 
 Python (Pandas, Scikit-learn, Matplotlib)
 
 SQL for data integration
 
-Power BI for visualization
+Power BI for interactive dashboards
 
-Business Impact
-
-This project proves how integrating ESG with financial analysis can:
-
-Help investors de-risk portfolios.
-
-Enable consulting firms to give data-backed sustainability advice.
-
-Support board-level decision-making on risk management.
