@@ -48,6 +48,10 @@ The dataset is **simulated for learning** but designed to reflect real-world ESG
 - **DAX Measures** for KPIs & Risk Level calculation  
 
 ---
+---
+
+![ESG-Financial-Risk-Detection Dashboard](https://raw.githubusercontent.com/CharuDataAnalyst/ESG-Financial-Risk-Detection-for-Strategic-Decision-Making/main/ECG%20dashboard.png)
+---
 
 ## 🔑 DAX Measures Used
 ```DAX
